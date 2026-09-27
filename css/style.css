@@ -2,7 +2,7 @@
 
 /* ============================================
    Design direction
-   Body font:     Georgia, serif
+   Body font:     Futura,serif
    Heading font:  Helvetica, sans-serif
    Text color:    #222222
    Background:    #fdfdfb
@@ -12,11 +12,11 @@
 
 /* --- Base and typography --- */
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Futura, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.6;
-  color: #222222;
-  background-color: #d8a91d;
+  color: #3b0f55;
+  background-color: #f4d1bb;
   margin: 0;
 }
 
@@ -26,8 +26,8 @@ h2   { font-size: 1.5rem; }
 h3   { font-size: 1.25rem; }
 h4   { font-size: 1rem; }
 
-a { color: #1a5f9c; }
-a:hover { color: #0b9831; }
+a { color: #f28c38; }
+a:hover { color: #6119a5; }
 
 /* --- Wrapper --- */
 .wrapper {
@@ -37,14 +37,15 @@ a:hover { color: #0b9831; }
 
 /* --- Header and nav --- */
 
-.nav-link{ font-size: 1.5rem;
-text-decoration: none:}
+.nav-link { font-size: 1.5rem;
+text-decoration: none;}
 /* --- Hero --- */
 
-.hero-title{color:gray 
-font-size:3rem;}
-.hero-text{color:gray
-font-size:2rem;}
+.hero-title{ color:rgb(205, 84, 4);
+font-size:3rem} 
+.hero-text{color:rgb(143, 24, 109);
+font-size: 1.5rem}
+
 /* --- Text blocks --- */
 
 
