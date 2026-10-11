@@ -11,6 +11,14 @@
    ============================================ */
 
 /* --- Base and typography --- */
+/* DEBUG: see the boxes. Change 1px to 0 to hide them. */
+* {
+  outline: 0px solid red;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Futura, Helvetica, sans-serif;
   font-size: 100%;
@@ -27,19 +35,66 @@ h3   { font-size: 1.25rem; }
 h4   { font-size: 1rem; }
 
 a { color: #fa892d; }
-a:hover { color: #6119a5; }
+
+
+a:hover { color: #6119a5;
+  font-weight:bold
+
+}
+
 
 /* --- Wrapper --- */
 .wrapper {
   max-width: 80%;
   margin: 0 auto;
   max-width:800px;
+  padding: 40px;
+
 }
 
 /* --- Header and nav --- */
 
+.site-header p {
+  Font-family: Futura, condensed, sans-serif;
+  color: #500bb0;
+  font-weight: Bold;
+  Font-Size: 1.30rem;
+  letter-spacing: 0.1rem;
+text-decoration: underline; 
+
+}
+
+.site-header{height 170px;
+padding: 25px 0px 50px 0px;
+ background-color: #cae6ff;
+}
+
 .nav-link { font-size: 1.5rem;
-text-decoration: none;}
+text-decoration: none;
+ border-radius: 6px;
+}
+
+.nav-link:hover {
+background-color: #f0e4e4;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 8px 12px;
+}
+.nav-list li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 25px;
+
+}
+.nav-list li a{
+  font-size: 20px;
+   padding: 0;
+}
+
 
 /* --- Hero --- */
 
@@ -60,6 +115,13 @@ text-decoration: none;}
   top: 20%;
   left: 5%;
 }
+
+.hero-title,
+.hero-text {
+  background-color: rgba(102, 59, 103, 0.433);
+  padding: 8px 16px;
+}
+
 .hero-title{ color:rgb(255, 240, 229);
 font-size:2.25rem} 
 h1 {
@@ -71,26 +133,32 @@ h1 {
 font-size: 1.5rem}
 
 /* --- Text blocks --- */
+
 .image-inline-left {
   float: left;
   width: 40%;
-  max-width: 300px;
-  margin-right: 1em;
-  width: 300px;
-  height: 200px;
-  /* Apply object-fit so the image doesn't distort if resized */
-  object-fit: cover; 
-  /* This creates the rounded corners */
-  border-radius: 15px; 
-  
+  margin: 5px 20px 20px 20px;   /* top, right, bottom, left */
+
 }
 .image-inline-right {
-  float: left;
+  float: right;
   width: 40%;
-  max-width: 300px;
-  margin-right: 1em;
+margin: 5px 20px 20px 20px;/* top, right, bottom, left */
 }
-display: flow-root;
+
+P {display: flow-root;}
+
+.section-title {
+margin: 0px 0px 20px 0px;  /* top, left and right, bottom */
+}
+
+.text-block {
+  margin-bottom:25px;
+ 
+  padding: 0px
+ 
+}
+
 
 /* --- Lists --- */
 
@@ -100,7 +168,11 @@ display: flow-root;
 
 
 /* --- Footer --- */
-
+.site-footer {
+  margin-top: 60px;
+  padding: 32px 0;
+  background-color: #fffcfc;
+}
 
 
 
