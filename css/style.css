@@ -73,7 +73,7 @@ background-color: #f0e4e4;
   margin: 0;
   padding: 0;
   display: flex;
-  
+
   
 
 }
@@ -281,8 +281,52 @@ margin: 0px 0px 20px 0px;  /* top, left and right, bottom */
 #nav-toggle:checked + .hamburger span:nth-child(3) {
   transform: translateY(-9.5px) rotate(-45deg);
 }
+/* Form styles */
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color:#ffebf9;
+  padding: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 90%;
+  border-radius: 8px;
+  height: 30px;
+}
+input.phone {
+  width: 50%;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+button:hover {
+  display: block;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: orange;
+
+}
+
+input:user-invalid{border: dashed 2px red;}
+
 /* MOBILE: 768px and narrower */
-@media (max-width: 768px) {
+@media (max-width: 768px)
 
   /* Logo left, hamburger right, and let the nav drop to its own line */
   .site-header {
