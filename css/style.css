@@ -325,6 +325,19 @@ button:hover {
 
 input:user-invalid{border: dashed 2px red;}
 
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 25px;
+}
+
+.radio-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
 /* MOBILE: 768px and narrower */
 @media (max-width: 768px)
 
