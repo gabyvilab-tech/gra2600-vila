@@ -337,6 +337,11 @@ input:user-invalid{border: dashed 2px red;}
   height: 18px;
   margin: 0;
 }
+.page-title {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0 30px;
+}
 
 /* MOBILE: 768px and narrower */
 @media (max-width: 768px){
