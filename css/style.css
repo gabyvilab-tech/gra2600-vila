@@ -54,7 +54,7 @@ a:hover { color: #6119a5;
 
 /* --- Header and nav --- */
 
-.site-header{height 170px;
+.site-header{ height: 170px;
 padding: 25px 0px 50px 0px;
  background-color: #fba157;
 }
@@ -339,7 +339,7 @@ input:user-invalid{border: dashed 2px red;}
 }
 
 /* MOBILE: 768px and narrower */
-@media (max-width: 768px)
+@media (max-width: 768px){
 
   /* Logo left, hamburger right, and let the nav drop to its own line */
   .site-header {
