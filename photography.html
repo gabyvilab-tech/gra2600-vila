@@ -22,21 +22,38 @@
   
 </div>
 
+ <button class="pop-button" popovertarget="pop-photography-info">More about this page</button>
  
+ <div id="pop-photography-info" class="pop-info" popover>
+  <h3>About my photography work</h3>
+  <p>Write a few sentences here.</p>
+  <button class="pop-close" popovertarget="pop-photography-info" popovertargetaction="hide">Close</button>
+</div>
+
 <h2>Gallery</h2>
 
 <section class="card-grid">
 
   <div class="card">
+      <button class="pop-thumb" popovertarget="pop-printables">
     <img class="card-image" src="images/printables.jpg" alt="Hand-lettered menu for a coffee shop">
+  </button>
     <h3 class="card-title">Landscape</h3>
     <p class="card-text">One or two sentences about what this is.</p>
+    <div id="pop-printables" class="pop-up" popover>
+    <img src="images/printables.jpg" alt="Hand-lettered menu for a coffee shop">
+  </div>
   </div>
 
   <div class="card">
+    <button class="pop-thumb" popovertarget="pop-sunset">
     <img class="card-image" src="images/sunset.jpg" alt="Hand-lettered menu for a coffee shop">
+    </button>
     <h3 class="card-title">Wallpaper</h3>
     <p class="card-text">One or two sentences about what this is.</p>
+    <div id="pop-sunset" class="pop-up" popover>
+    <img src="images/sunset.jpg" alt="Hand-lettered menu for a coffee shop">
+  </div>
   </div>
 
   <div class="card">
@@ -50,6 +67,12 @@
   
 
 <!-- LINK EXAMPLES: internal + external -->
+ <button class="pop-button" popovertarget="pop-how-i-edit">How I Edit</button>
+<div id="pop-how-i-edit" class="pop-info" popover>
+  <h3>How I Edit</h3>
+  <p>After I take a photo, I open it in lightroom and apply one of my presets. If you want to know more about my lightroom presets you can go check out my projects page </p>
+  <button class="pop-close" popovertarget="pop-how-i-edit" popovertargetaction="hide">Close</button>
+</div>
 <p>This is an internal link to another page on my own site: <a href="about.html">about page</a>.</p>
 <p>This is an external link to a site I used while building this page: <a href="https://htmlandcssguidebook.com">HTML and CSS Guidebook</a>.</p>
 

@@ -54,7 +54,7 @@ a:hover { color: #6119a5;
 
 /* --- Header and nav --- */
 
-.site-header{ height: 170px;
+.site-header{ min-height: 170px;
 padding: 25px 0px 50px 0px;
  background-color: #fba157;
 }
@@ -309,13 +309,13 @@ textarea {
   border-radius: 8px;
 }
 
-button {
+form button {
   display: block;
   margin-top: 20px;
   border-radius: 8px;
 }
 
-button:hover {
+form button:hover {
   display: block;
   margin-top: 20px;
   border-radius: 8px;
@@ -323,7 +323,7 @@ button:hover {
 
 }
 
-input:user-invalid{border: dashed 2px red;}
+
 
 .radio-option {
   display: inline-flex;
@@ -343,6 +343,60 @@ input:user-invalid{border: dashed 2px red;}
   padding: 0 30px;
 }
 
+input:user-invalid{border: dashed 2px red;}
+
+/* POP-UPS */
+.pop-thumb {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.pop-button{background-color:#f4d1bb;
+padding: 15px;
+font-size: 16px;
+}
+
+.pop-button {background-color:#ffebf9;
+}
+
+.pop-info {
+  width: 80vw;
+  max-width: 700px;
+  padding: 30px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.pop-info::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.pop-up {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+  .pop-up::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.pop-up img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+  .pop-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 /* MOBILE: 768px and narrower */
 @media (max-width: 768px){
 
@@ -350,6 +404,8 @@ input:user-invalid{border: dashed 2px red;}
   .site-header {
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Show the hamburger */
